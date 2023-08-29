@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+	#intro{ position:fixed; width:100%; height:100%; top:0; left:0; background-image: -moz-element("./img/slide.jpg") no-repeat center center /cover;}
+	#intro .intro_txt{ position:absolute; top:50%; transform:translateY(-50%); width:100%; text-align:center; }
+	#intro .intro_txt p:not(.main_btn){ color:#fff; font-size:36px; font-weight:200; line-height:1.5; letter-spacing:-1px; transition:all 2s; transform:translateY(100px); opacity:0; }
+	#intro.on .intro_txt p:not(.main_btn){ transform:translateY(0); opacity:1; }
+	#intro .intro_txt p:nth-child(2){ transition-delay:0.8s; }
+	#intro .intro_txt p:nth-child(3){ transition-delay:1.6s; }
+	#intro .intro_txt p:nth-child(4){ margin-top:50px; transition-delay:2.4s;}
+	#intro .intro_txt p strong{ font-weight:500; }
+	#intro .main_btn{ margin-top:30px; opacity:0; transition:all 1s; transition-delay:4s; }
+	#intro.on .main_btn{ opacity:1; }
+	#intro .main_btn a{ color:#fff; font-size:22px; font-weight:500; padding-bottom:5px; border-bottom:3px solid #e30613; }
+    </style>
+</head>
+<body>
+    <div id="intro" class="on">
+		<div class="intro_txt">
+			<p>우리에겐 잊힐 권리가 있습니다.</p>
+			<p>산타크루즈컴퍼니는 잊힐 권리를 모토로 2008년부터</p>
+			<p><strong>온라인기록삭제(SORM)</strong>를 해온 <strong>우리나라 최초의 회사</strong>입니다.</p>
+			<p>어떤 기록 때문에 고민이십니까?</p>
+			<p class="main_btn"><img src="./img/slide.jpg">메인페이지로</a></p>
+		</div>
+
+	</div>
+    
+</body>
+</html>
